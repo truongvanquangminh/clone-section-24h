@@ -4,24 +4,27 @@
     box-sizing: border-box;
 }
 
-.main {
-    width: 700px;
-    height: 100vh;
-    margin: auto;
+.content {
+    width: 1004px;
+    margin: 10px auto;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-left {
+    width: 700px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    float: left;
 }
 
 .container {
     width: 347px;
-    height: 262px;
     margin-top: 10px;
 }
 
 .container .header {
     width: 347px;
-    height: 27px;
     display: flex;
 }
 
@@ -90,7 +93,6 @@
 
 .container .content {
     width: 348px;
-    height: 235px;
     margin-top: 10px;
 }
 
@@ -121,14 +123,12 @@
 
 .image img {
     width: 100%;
-    height: 100%;
 }
 
 .news {
     color: #333;
     font-size: 13px;
     line-height: 18px;
-    height: auto;
     display: block;
 }
 
@@ -197,6 +197,345 @@
     color: #692;
 }
 
-.news1 .tin.video {
+.news1 .tin.video,
+.news2 .tin.video,
+.news3 .tin.video {
     background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -359px !important;
+}
+
+.news3 {
+    padding: 2px 5px;
+    background-color: white;
+}
+
+.news3.one {
+    height: 89px;
+    overflow-x: hidden;
+}
+
+.news3.one::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+.news3.one::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgb(0 0 0 / 30%);
+    background-color: #f5f5f5;
+    height: 10px;
+}
+
+.news3 .tin {
+    line-height: 17px;
+    display: block;
+    list-style: none;
+    padding: 2px 0 0 15px;
+    padding-left: 16px;
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -46px -253px;
+}
+
+.news3 .tin a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.news3 .tin a:hover {
+    color: #78b43d;
+}
+
+.news3 .tin.camera {
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -1549px;
+}
+
+.news3 .tin.startRed {
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -51px -2323px;
+}
+
+.content-right {
+    float: left;
+    width: 300px;
+    margin-left: 4px;
+}
+
+.tttt h3{
+    color: #78b43d;
+    border-bottom: 2px solid #78b43d;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.tttt ul {
+    list-style: none;
+}
+
+.tttt ul li {
+    margin-bottom: 20px;
+}
+
+.tttt ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: #252525;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.tttt ul li a:hover {
+    color: #78b43d;
+}
+
+.tttt ul li a p {
+    padding: 0 5px 10px 10px;
+}
+
+.ttck h3 {
+    color: #78b43d;
+    border-bottom: 2px solid #78b43d;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    background: url(//cdn.24h.com.vn/images/icon_topck.png) no-repeat;
+}
+
+.ttck .ck {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 13px;
+    color: #333;
+}
+
+.ttck .ck li {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.ttck ul {
+    list-style: none;
+}
+
+.ttck ul li {
+    margin-bottom: 20px;
+}
+
+.ttck ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: #252525;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.ttck ul li a:hover {
+    color: #78b43d;
+}
+
+.ttck ul li a img {
+    width: 111px;
+}
+
+.ttck ul li a p {
+    padding: 0 5px 10px 10px;
+}
+
+.drcpd h3 {
+    color: #d2577e;
+    border-bottom: 2px solid;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4150px;
+}
+
+.drcpd ul {
+    list-style: none;
+}
+
+.drcpd ul.one {
+    margin-bottom: 20px;
+}
+
+.drcpd ul.one a {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.drcpd ul.one a:hover,
+.drcpd ul.two li:hover {
+    color: #78b43d;
+}
+
+.drcpd ul.one a img {
+    width: 114px;
+}
+
+.drcpd ul.one a p {
+    padding-left: 10px;
+}
+
+.drcpd ul.two li {
+    margin-bottom: 10px;
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -45px -40px;
+    font-size: 12px;
+    padding: 5px 10px;
+    padding-left: 22px;
+    cursor: pointer;
+}
+
+.drcpd ul.three {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drcpd ul.three .active {
+    background: #d2577e;
+    border-color: #d2577e;
+    color: #fff!important;
+}
+
+.drcpd ul.three li {
+    background-color: #fff;
+    color: #757575;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    padding: 5px;
+}
+
+.drcpd ul.three li:hover {
+    color: #d2577e;
+}
+
+.videoCL {
+    width: 100%;
+}
+
+.videoContent {
+    display: flex;
+    width: 100%;
+}
+
+.videoCL h3 {
+    color:#78b43d;
+    font-size: 17px;
+    line-height: 2;
+    background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -3909px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #78b43d;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.videoCL h3:hover {
+    color: black;
+}
+
+.videoCL .videoCL-left {
+    width: 395px;
+}
+
+.videoCL .videoCL-left img {
+    margin-bottom: 10px;
+}
+
+.videoCL .videoCL-left a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.videoCL .videoCL-left a:hover {
+    color: #78b43d;
+}
+
+.videoCL .videoCL-left p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.videoCL .videoCL-right {
+    width: 302px;
+    height: 321px;
+    overflow-x: hidden;
+}
+
+.videoCL .videoCL-right::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+.videoCL .videoCL-right::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgb(0 0 0 / 30%);
+    background-color: #f5f5f5;
+    height: 10px;
+}
+
+.videoCL .videoCL-right ul {
+    list-style: none;
+    font-size: 12px;
+}
+
+.videoCL .videoCL-right ul li {
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+.videoCL .videoCL-right ul li a {
+    display: flex;
+    text-decoration: none;
+}
+
+.videoCL .videoCL-right ul li img {
+    width: 130px;
+    height: 76,4px;
+}
+
+.videoCL .videoCL-right ul li p {
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 10px 0 10px;
+}
+
+.videoCL .videoCL-right ul li p:hover {
+    color: #78b43d;
+}
+
+.container.fullwith {
+    width: 100%;
+}
+
+.container.fullwith .content {
+    width: 100%;
+}
+
+.container.fullwith .content .news3 {
+    margin-left: 125px;
+    margin-top: -14px;
+}
+
+.container.fullwith .content .news3 .tin a:hover {
+    color: #78b43d;
 }
