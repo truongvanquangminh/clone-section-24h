@@ -9,7 +9,7 @@
     margin: 10px auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Contetn Left */
 .content-left {
     width: 700px;
     display: flex;
@@ -252,7 +252,7 @@
 .news3 .tin.startRed {
     background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -51px -2323px;
 }
-
+/* Content Right */
 .content-right {
     float: left;
     width: 300px;
@@ -424,7 +424,7 @@
 .drcpd ul.three li:hover {
     color: #d2577e;
 }
-
+/* Video Chọn lọc */
 .videoCL {
     width: 100%;
 }
@@ -522,7 +522,7 @@
 .videoCL .videoCL-right ul li p:hover {
     color: #78b43d;
 }
-
+/* Container FullWith */
 .container.fullwith {
     width: 100%;
 }
